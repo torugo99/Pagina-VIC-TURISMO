@@ -61,7 +61,6 @@ $('.scrollup').click(function(){
     $('html').animate({scrollTop: 0});
 });
 ```
-
 ### 📸 | Screenshots: 
 
 ![preview1 img](/images/preview.png)
@@ -70,6 +69,7 @@ $('.scrollup').click(function(){
 
 - Github: [Victor Hugo.](https://github.com/torugo99)
 - LinkedIn: [Victor Hugo.](https://www.linkedin.com/in/victor-hugo99/)
+- Meu Site: [Victor99dev.](http://victor99dev.site/)
 
 ### 😀 | Créditos e Agradecimentos:
 
