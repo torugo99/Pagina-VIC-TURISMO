@@ -24,6 +24,8 @@ div img {
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
+    /*padding: 10px 15px;*/
 }
 
 header {
@@ -98,6 +100,7 @@ header .menu a:hover {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10vh;
 }
 
 #quem-somos h2 {
@@ -269,4 +272,9 @@ footer .footer a{
 
 footer .footer a:hover {
     color: #000;
+}
+
+/*Responsividade*/
+@media(max-width:992px) {
+    
 }
