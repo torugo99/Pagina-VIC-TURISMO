@@ -4,11 +4,29 @@
 
 Seja bem vindo ao meu projeto chamado VIC TURISMO, feito totalmente para meus estudos e aperfeiçoamento como profissional. ❤️
 
-- Tomei a liberdade de adicionar incrementos ao projeto utilizando JavaScript.
+- Tomei a liberdade de adicionar incrementos ao projeto utilizando JavaScript. 
+    </br> Ex: Criação do Botão <b>Scrool To Top</b>.
+
+```js
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if(this.scrollY > 50){
+            $('.scrollup').addClass("show")
+        }else{
+            $('.scrollup').removeClass("show")
+        }
+    })
+});
+
+$('.scrollup').click(function(){
+    $('html').animate({scrollTop: 0});
+});
+```
+
 
 - Melhorias para visualização em dispositivos móveis.
 
-- Utilizando apenas HTML, CSS E JS.
+- Utilizando: HTML, CSS E JS.
 
 ### 📸 | Screenshots: 
 

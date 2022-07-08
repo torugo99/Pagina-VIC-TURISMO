@@ -15,7 +15,7 @@ ul li a {
 }
 
 div img {
-    display: block;
+   display: block;
     width: 100%;
 }
 
@@ -24,19 +24,24 @@ div img {
     max-width: 992px;
     margin: auto;
     width: 100%;
-    min-width: 320px;
+    min-width: 100vh;
+    position: relative;
     /*padding: 10px 15px;*/
 }
 
 header {
     background-color: #FF0000;
+    position: relative;
     height: 100px;
     display: flex;
     align-items: center;
     color: #fff;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 header .list-items {
+    position: relative;
     display: flex;
     width: 100%;
     max-width: 260px;
@@ -46,6 +51,10 @@ header .list-items {
 
 .list-items li a{
     color: #fff;
+}
+
+.list-items {
+    list-style: none;
 }
 
 header .menu{
@@ -59,12 +68,39 @@ header .menu a {
 
 header .menu a:hover {
     color: #000;
+    transition: all 0.4s ease;
+}
+
+.scrollup {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background:#000;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color:#FF0000;
+    font-size: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.scrollup.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .apresentacao {
+    position: relative;
     height: 100vh;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
 }
 
 .apresentacao .texto-apresentacao {
@@ -94,6 +130,7 @@ header .menu a:hover {
 .btn:hover {
     color: #FF0000;
     background-color: #000;
+    transition: all 0.4s ease;
 }
 
 #quem-somos {
@@ -172,6 +209,7 @@ header .menu a:hover {
 .item-servico a:hover {
     color: #FF0000;
     background-color: #000;
+    transition: all 0.4s ease;
 }
 
 .item-servico p {
@@ -272,9 +310,14 @@ footer .footer a{
 
 footer .footer a:hover {
     color: #000;
+    transition: all 0.4s ease;
 }
 
 /*Responsividade*/
-@media(max-width:992px) {
-    
+@media(max-width:991px) {
+    .flex-container {
+        padding: 0 50px;
+    }
+
+   
 }
